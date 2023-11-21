@@ -37,7 +37,11 @@ label {
 
 a {
   text-decoration: none;
-  ;
+}
+
+footer .container a:hover {
+  color: red;
+  text-decoration: double;
 }
 
 li {
@@ -476,7 +480,7 @@ figure::after {
 
   & p {
     margin: 1.2rem 0 2.4rem 0;
-    font-size: 1.1rem;
+    font-size: 1.8rem;
   }
 
   & a {
@@ -764,6 +768,7 @@ footer * {
     width: 32rem;
     margin-top: -15rem;
     padding: 3rem 0;
+
     & .contact-image {
       order: 1;
     }
@@ -771,6 +776,10 @@ footer * {
     & .contact-content {
       order: 2;
 
+      & .btn {
+        display: block;
+        text-align: center;
+      }
     }
   }
 
@@ -826,6 +835,19 @@ footer * {
 
     & .text-align--right .why-choose--div {
       align-items: start;
+    }
+  }
+}
+
+@media (width <= 576px) {
+
+  .section-hero {
+    & .grid-two--cols {
+      & .section-hero--image {
+        & img {
+          width: 85%;
+        }
+      }
     }
   }
 }
